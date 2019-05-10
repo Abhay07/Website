@@ -1,0 +1,102 @@
+<html>
+<head>
+<style>
+body{}
+</style>
+</head>
+<body>
+<canvas id="mycanvas" style="borde/r:1px solid black;position:absolute;top:0;left:0;z-index:0;">
+</canvas>
+</body>
+<script>
+window.onload =
+function()
+{
+var canvas=document.getElementById('mycanvas');
+var ctx = canvas.getContext('2d');
+var canheight= window.innerHeight;
+var canwidth= window.innerWidth;
+canvas.width=canwidth;
+canvas.height=canheight;
+console.log(canwidth,canheight);
+var img1,img2,img3,img4,img5,img6,img7,img8,banner,banner2;
+img1=new Image();img2=new Image();img3=new Image();img4=new Image();img5=new Image();img6=new Image();img7=new Image();img8=new Image();img9=new Image();banner=new Image();banner2=new Image();
+img1.src="cycle1.png";img2.src="cycle2.png";img3.src="cycle3.png";img4.src="cycle4.png";img5.src="cycle5.png";img6.src="cycle6.png";img7.src="cycle7.png";img8.src="cycle8.png";img9.src="cycle9.png";banner.src="bannerimg.jpg";banner2.src="bannerimg2.jpg";
+var m=0;
+var direction="right";
+var animfun = function()
+{
+	ctx.clearRect(0,0,canvas.width,canvas.height);
+	if(m*20>canvas.width)
+	{
+	direction="left";
+	console.log(direction);
+	}
+	
+	if(m*20<0)
+	{
+	direction="right";
+	console.log(direction);
+	}
+	
+	if(direction=="right")
+	m++;
+	
+	if(direction=="left")
+	{
+	m--;
+	ctx.drawImage(banner,m*20+140,canheight/3+10);
+	}
+	
+	switch(m%4)
+	{
+		case 0:
+		{
+		if(direction=='right')
+		ctx.drawImage(img1,m*20,canheight/3);
+		else
+		ctx.drawImage(img8,m*20,canheight/3);
+		break;
+		}
+		case 1:
+		{
+		if(direction=='right')
+		ctx.drawImage(img2,m*20,canheight/3);
+		else
+		ctx.drawImage(img7,m*20,canheight/3);
+		break;
+		}
+		case 2:
+		{
+		if(direction=='right')
+		ctx.drawImage(img3,m*20,canheight/3);
+		else
+		ctx.drawImage(img6,m*20,canheight/3);
+		break;
+		}
+		
+		case 3:
+		{
+		if(direction=='right')
+		ctx.drawImage(img4,m*20,canheight/3);
+		else
+		ctx.drawImage(img5,m*20,canheight/3);
+		break;
+		}
+	}
+	
+	if((direction=="left") &&(m*20==200))
+	{
+	clearInterval(animcycle);
+	ctx.clearRect(0,0,canvas.width,canvas.height);
+	ctx.drawImage(img9,m*20,canheight/3);
+	ctx.drawImage(banner,m*20+80,canheight/3);
+	m=0;
+	setTimeout(function(){animcycle=setInterval(animfun,200);},8000);
+	}
+};
+var animcycle=setInterval(animfun,200);
+console.log(img1);
+};
+</script>
+</html>

@@ -1,0 +1,51 @@
+<div class="container quiz-page">
+    <div class="text-center" ng-show="resultGenerated">
+        <button class="share-btn" ng-click="shareResult()" target="_blank">
+            <i class="icon-facebook-official"></i> Share on Facebook
+        </button>
+    </div>
+    <div class="quiz-container" ng-show="!calculatingResult && !resultGenerated">
+        <h1>{{quizTitle}}</h1>
+        <img ng-show="!coverLoaded" ng-src="images/quizzes/blur.jpg" alt="{{quizTitle}}"  ng-click="getResult($event)">
+        <img ng-show="coverLoaded" ng-src="images/quizzes/{{quizId}}/coverLarge.jpg?v=0.3" alt="{{quizTitle}}" ng-click="getResult($event)">
+        <div class="inst">Please login with Facebook to see your result</div>
+        <button class="login-with-facebook" ng-click="getResult($event)">
+            <span ng-show="!waiting"><i class="icon-facebook-official"></i> Continue with facebook</span>
+            <span ng-show="waiting" class="fbnotready-btn"><i class="icon-circle-o-notch"></i></span>
+        </button>
+    </div>
+    <div class="loading-result-container" ng-show="calculatingResult">
+        <span ng-show="!savingStatus">Generating your awesome result...</span>
+        <span ng-show="savingStatus">Fasten your seatbelt, <br>you are about to land on the results page...</span>
+        <br>
+        <ul class="equalizer-bars">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <canvas id="canvas1" width="800" height="420" ng-show="resultGenerated">
+    </canvas>
+
+    <div class="text-center" ng-show="resultGenerated">
+
+        <button class="share-btn" ng-click="shareResult()" target="_blank">
+            <i class="icon-facebook-official"></i> Share on Facebook
+        </button>
+
+        <br>
+        <button class="try-btn" ng-click="getResult($event)"><i class="icon-repeat"></i>Not Happy with the result ? Try Again</button>
+    </div>
+</div>
+<div class="other-quiz-container pull-right">
+    <div class="thumbnail-container" ng-repeat="quiz in quizzes" ng-click="goToQuiz(quiz.quizId == undefined?0:quiz.quizId)">
+        <div class="thumbnail">
+            <a href="">
+                <img ng-src="images/quizzes/{{quiz.quizId}}/coverSmall.jpg?v=0.3" alt="">
+            </a>
+        </div>
+        <div class="quiz-title">{{quiz.title}}</div>
+    </div>
+</div>

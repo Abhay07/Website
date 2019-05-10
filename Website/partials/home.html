@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="thumbnail-wrapper clearfix">
+        <div class="thumbnail-container" ng-repeat="quiz in quizzes" ng-click="goToQuiz(quiz.quizId == undefined?0:quiz.quizId)">
+            <div class="thumbnail">
+                <a href="">
+                    <img ng-src="images/quizzes/{{quiz.quizId}}/coverSmall.jpg?v=0.3" alt="{{quiz.title}}">
+                </a>
+                <button class="play-quiz-btn">
+                    Play Now
+                </button>
+            </div>
+                <div class="quiz-title">{{quiz.title}}</div>
+            
+        </div>
+    </div>
+    <div class="navigation text-center">
+        <a href="" ng-click="pagePrev()" ng-class="current==0?'disabled':''"><i class="icon-chevron-left"></i> PREV</a>
+        <a href="" ng-click="pageNext()" ng-class="current==(totalQuiz-6)?'disabled':''">NEXT <i class="icon-chevron-right"></i></a>
+    </div>
+</div>

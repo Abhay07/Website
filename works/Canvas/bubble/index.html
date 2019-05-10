@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+body{margin:auto;overflow:hidden;background-image:url('garden.jpg');background-size:100% 100%;}
+</style>
+</head>
+<body>
+<img src="bubble.png" id="bubble-img" style="display:none;"/>
+<canvas id="mycanvas" style="borde/r:1px solid black;position:absolute;top:0;left:0;z-index:0;">
+</canvas>
+</body>
+<script>
+window.onload =
+function()
+{
+var canvas=document.getElementById('mycanvas');
+var canheight= window.innerHeight;
+var canwidth= window.innerWidth;
+canvas.width=canwidth;
+canvas.height=canheight;
+console.log(canwidth,canheight);
+var ctx = canvas.getContext('2d');
+var img = document.getElementById('bubble-img');
+ctx.fillStyle="rgba(255,255,255,0.5)";
+var i,m,size;
+i=0;m=0;
+setInterval(
+function()
+{
+if(i<=100)
+{
+if(i==100)
+i=0;
+i++;
+size=Math.random()*80+10;
+ctx.drawImage(img,canwidth*Math.random(),canheight*Math.random(),size,size);
+}
+},50);
+setInterval(
+function()
+{
+if(m<200)
+{
+if(m<180)
+{
+/*ctx.beginPath();
+ctx.arc(canwidth/2,canheight,canwidth/2,-m*0.1,-(m*0.1+0.2),true);
+ctx.lineTo(canwidth/2,canheight);
+ctx.closePath();
+ctx.fill();*/
+ctx.save();
+ctx.translate(canwidth/2,canheight+50);
+ctx.rotate(-m*Math.PI/180);
+ctx.fillRect(0,0,canwidth/2,50);
+ctx.clearRect(0,0,canwidth/2,50);
+ctx.translate(-canwidth/2,-canheight-50);
+ctx.restore();
+}
+m++;
+if(m==199)
+m=0;
+}
+},50);
+}
+</script>
+</html>

@@ -1,0 +1,115 @@
+@font-face 
+{
+ 
+font-family: 'webfontregular';
+    
+src:url('images/shusha-webfont.eot');
+font-weight: normal;
+   
+font-style: normal;
+
+}
+
+@font-face{ 
+    font-family:bhartiya;
+    src:url('images/bhartiya.ttf');
+    src:url('images/bhartiya.eot')}
+
+
+body {background: #d75612;}
+
+img.underline
+{position:relative;
+left:30%;
+width:50%;
+}
+
+img.udd
+{position:absolute;
+top:18%;
+left:85%;
+width:8%;}
+
+#maa
+{position:relative;
+left:20%;
+top:2%;
+width:50%;
+height:40%;
+margin-bottom:2%;}
+
+#topquote
+{border:solid 2px white;
+position:absolute;
+top:0%;
+right:0%;
+width:65%;
+color:#8d1b01;
+font-family:webfontregular;
+font-size:38px;
+font-style:italic;
+font-weight:bold;
+}
+
+#left
+{position:absolute;
+width:25%;
+height:100%;
+border:solid 2px #d75612;
+top:0%;
+left:0%;
+}
+
+#right
+{border:solid 2px #d75612;
+}
+
+#middle
+{border:solid 2px white;
+background: white;
+width:70%;
+height:280%;
+position:absolute;
+left:20%;
+top:0%;
+}
+
+
+
+#line
+{position:absolute;
+width:80%;
+top:6%;
+left:21%;
+}
+
+a.udd
+{font-family:webfontregular;
+font-size:29px;
+color:white;
+text-decoration:none;
+position:relative;
+left:30%;}
+
+a.udd:hover
+{
+color:yellow;
+}
+
+#maintext
+{border:solid 2px white;
+position:relative;
+top:9%;
+left:50px;
+width:75%;
+height:450px;
+font:normal 25px webfontregular;
+color:#8d1b01;
+}
+
+
+
+
+
+
+

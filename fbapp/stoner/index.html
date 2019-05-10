@@ -1,0 +1,110 @@
+<html>
+<head>
+<style>
+#container{
+display:none;
+}
+
+.results{
+position:relative;
+top:50%;
+tranform:translateY(-50%);
+width:100%;
+}
+
+
+.friends_list{
+list-style:none;
+margin:0;
+padding:0;
+width:100%;
+}
+
+
+.header{
+line-height:35px;
+background-color:#4697f4;
+color:white;
+margin:auto;
+width:100%;
+padding-left:1%;
+}
+
+.results>li{
+width:100%;
+line-height:50px;
+color:black;
+border:1px solid black;
+padding-left:1%;
+}
+
+</style>
+</head>
+<body>
+<h1 id="fb-welcome"></h1>
+<div id="container"></div>
+<div class="results">
+<div class="header">YOUR STONER FRIENDS ARE</div>
+<ul class="friends_list"></ul>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '799585493487933',
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+    function onLogin(response) {
+  if (response.status == 'connected') {
+    FB.api('/me/friendlists', function(data) {
+	  console.log(data);
+    });
+	$.ajax({
+	url:'https://www.facebook.com/TheStonersCookbook/likes',
+	crossDomain: true,
+	dataType:'text',
+	success:function(result){
+	console.log('result');
+	var d = document.createElement('div');
+	d.innerHTML= result;
+	$(d).children('code:eq(1)').contents().filter(function() {
+        return this.nodeType == 8;
+    }).each(function(i, e) {
+        $('#container').html(e.nodeValue);
+    });
+	var q = $('#container a[ajaxify*="dialog/participants"]');
+	var m = q.attr('aria-label').split("\n");
+	m.push(q.parent('span').prev('span').children('a').html());
+	m.push(q.parent('span').prev('span').prev('span').children('a').html());
+	$.each(m,function(key,value){
+	$('.friends_list').append("<li>"+value+"</li>");
+	});
+	}});
+  }
+  else
+  console.log('not connected');
+}
+FB.getLoginStatus(function(response) {
+  // Check login status on load, and if the user is
+  // already logged in, go directly to the welcome message.
+  if (response.status == 'connected') {
+    onLogin(response);
+  } else {
+    // Otherwise, show Login dialog first.
+    FB.login(function(response) {
+      onLogin(response);
+    }, {scope: 'user_friends, email'});
+  }
+});
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+</html>

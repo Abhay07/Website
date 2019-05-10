@@ -1,0 +1,353 @@
+body {
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: #222222;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.identity {
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    b/order: 1px solid white;
+    text-align: left;
+}
+
+.menus {
+    width: 730px;
+    height: 100px;
+    line-height: 100px;
+    padding-right: 30px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menus ul {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    line-height: 100px;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.menus ul li {
+    list-style: none;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 30px;
+    text-align: center;
+    bor/der: 1px solid white;
+    float: left;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.menus ul li .menu-pseudo:before {
+    content: attr(data);
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    color: #222;
+    transform-origin: 50% 100%;
+    transform: translateZ(35px) rotateX(90deg);
+    background: #222;
+    transition: background 0.2s;
+}
+
+.menus ul li .menu-pseudo {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    bor/der: 1px solid white;
+    background: #4c4b4b;
+    float: left;
+    position: relative;
+    transform-origin: 50% 0%;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+}
+
+.menus ul li .menu-pseudo:hover {
+    cursor: pointer;
+    transform: rotateX(-90deg);
+    transform: none\9;
+    background: white\9;
+    color: black\9;
+}
+
+.menus:hover ul li .menu-pseudo:before {
+    background: white;
+}
+
+.menu-pseudo {
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+}
+
+.portfolio {
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+}
+
+.portfolio-heading {
+    padding: 20px;
+    font-size: 35px;
+    color: #222;
+}
+
+.works {
+    width: 100%;
+    borde/r: 1px solid black;
+    float: left;
+    color: white;
+}
+
+.works.css {
+    background: #f26767;
+}
+
+.works.canvas {
+    background: #f26767;
+}
+
+.works.website {
+    background: #652B2B;
+}
+
+.work-heading {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    bor/der: 1px solid green;
+    font-size: 25px;
+}
+
+.work-links {
+    width: 76%;
+    bord/er: 1px solid black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+.work-links div {
+    width: 25%;
+    height: 200px;
+    out/line: 1px solid black;
+    float: left;
+    position: relative;
+}
+
+.work-links div a {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    backgro/und: white;
+    border: solid 2px white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-size: 100% 100%;
+}
+
+.work-links div a:before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s;
+    opacity: 0.2;
+}
+
+.work-links div a:hover::before {
+    height: 150px;
+    width: 150px;
+}
+
+.about {
+    width: 100%;
+    background: white;
+    padding: 50px 0px;
+    padding-bottom: 0px;
+    margin-top: 100px;
+}
+
+.pic {
+    width: 150px;
+    height: 150px;
+    background: url('images/mypic.png') no-repeat 100% 100%;
+    background-size: 100%;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.abouttext {
+    width: 100%;
+    bo/rder: 1px solid white;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    font-family: Cambria, Georgia;
+    font-size: 25px;
+    color: #222;
+}
+
+.contact {
+    background: #F26767;
+    color: white;
+    font-family: Cambria, Georgia;
+    font-size: 21px;
+    padding: 20px;
+}
+
+.footer {
+    background: #222222;
+    color: white;
+}
+
+.other-contacts {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.other-contacts a:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    border-radius: 50%;
+    transition: height 0.3s;
+    opacity: 0.2;
+    border: none;
+}
+
+.other-contacts a img {
+    border: none;
+}
+
+.other-contacts a:hover::after {
+    height: 40px;
+    width: 40px;
+}
+
+.separator_color {
+    color: black;
+}
+
+@media screen and (max-width:1200px) {
+    .work-links div {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .work-links div {
+        width: 50%;
+    }
+    .identity {
+        width: 1%;
+        left: 0;
+        text-align: center;
+    }
+    .header {
+        height: 175px;
+    }
+    .menus {
+        padding-right: 0px;
+        width: 730px;
+        top: 0px;
+        right: 0;
+        position: relative;
+    }
+    .menus ul {
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .work-links div {
+        width: 100%;
+    }
+    .header {
+        height: 250px;
+    }
+    .identity {
+        width: 1%;
+        left: 0px;
+        text-align: center;
+    }
+    .menus {
+        width: 200px;
+        top: 0px;
+        height: 100px;
+        margin: auto;
+        position: relative;
+        padding: 0px;
+    }
+    .menus ul {
+        padding: 0px;
+    }
+    .menus ul li {
+        margin-left: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@-moz-document url-prefix() {
+    .identity div {
+        position: relative;
+        left: 30px;
+    }
+}

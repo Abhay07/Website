@@ -1,0 +1,62 @@
+body{background:#40b9ce;margin:0px;font-family:Arial}
+.menu_div{background-image:url('images/menu_back.png');float:left;display:block;width:100px;height:100px;background-color:white;margin-right:1%;font-size:18px;color:#0b8ca2;display:table;text-align:center;}
+.menu_span{display:table-cell;vertical-align:middle}
+.menu_div:hover{background-color:#0b8ca2;cursor:pointer;color:white}
+div[title='active_menu']{background-color:#0b8ca2;color:white}
+#menu_container{border:solid 1px black;width:100%;height:100px}
+#main_container{border:solid 1px black;width:100%}
+#main_btns_container{margin-top:100px;border:solid 1px black;}
+.main_btns{width:500px;height:80px;border:solid 9px #b0e2ff;margin:auto;margin-bottom:50px;background:white;line-height:80px;vertical-align:middle;text-align:center;font-size:51px;color:#0b8ca2;font-weight:bold}
+.main_btns:hover{cursor:pointer;background:#40b9ce;border-color:#bfe8ef;color:white}
+#main_contents{width:100%;margin-top:100px}
+.blocks{display:block;float:left}
+#left_block{width:74%;border:solid 1px black;}
+#right_block{width:25%;border:solid 1px black;}
+table{width:90%;background:white;margin-left:1%;border-collapse:collapse;font-size:18px;}
+td{border-bottom:solid 10px #328391;border-right:solid 2px #328391}
+.td_1{width:40%;}
+.td_2{width:40%;}
+.td_4{width:10%;text-align:center}
+.td_3{width:8%;text-align:center}
+
+th{text-align:left;padding:5px 0px;background:#328391;color:white;font-weight:normal}
+.span_cell_1,.span_cell_2,.span_cell_3,.span_cell_4{display:block;text-align:center;padding:8px 0px;height:30px;line-height:30px;float:left;}
+.span_cell_1{width:20%;}
+.span_cell_2{width:45%;}
+.span_cell_3{width:15%;background-color:#40b9ce;color:white}
+.span_cell_4{width:20%;background-image:url('images/bet_back.png');background-color:#ea9e32;color:white;background-size:cover;background-repeat:no-repeat;background-position:center}
+.span_cell_4:hover{background-color:green;cursor:pointer;}
+.td_3_span{display: block;width: 50%;height:25px;float: left;line-height:25px;}
+.td_5 span.cancel_bet_span{display:block;background-image:url('images/bet_cancel_back1.png');width:70px;height:46px;background-color:#ea9e32}
+.td_5 span.cancel_bet_span:hover{cursor:pointer;background-color:red}
+.td_5 span:nth-child(2){display:block;width:80px;height:46px;text-align:center;line-height:46px}
+.sports_logo{display:block;float:left;line-height:30px;vertical-align:middle;margin-right:10px;}
+
+#bet_div{background:#0b8ca2;width:30%;height:250px;position:absolute;left:35%;z-index:1}
+//#bet_div_1,#bet_div_2,#bet_div_3,#bet_div_4,#bet_div_5{width:100%;border:solid 1px white}
+.bet_span_1,.bet_span_2{display:inline-block;width:48%;border:solid 1px red;line-height:30px;color:white}
+.bet_span_1{padding-left:10px}
+#bet_div_1 span{line-height: 50px;width: auto;height: 50px;vertical-align: middle;display: table-cell;padding: 0px 10px;}
+#bet_div_4 span{line-height:50px}
+#bet_div_6 span{display:table-cell;vertical-align:middle;text-align:center}
+#bet_div_1{height:50px;background:#6fbbc8;padding-left:30%}
+#bet_div_2{height:20px}
+#bet_div_3{height:30px;background:#4eb5c7;}
+#bet_div_4{height:50px;line-height:50px}
+#bet_div_5{height:30px;background:#4eb5c7;}
+#bet_div_6{height:70px;display:table;width:100%}
+#bet_amt_input{width:100%;height:30px}
+#dialog_box{position:absolute;width:40%;left:30%;height:200px;border:4px solid white;background:white;z-index:1;}
+#dialog_box_1{width:100%;height:50px;background:#328391;color:white;line-height:50px;vertical-align:middle}
+#dialog_box_2{width:100%;height:70px;padding-top:30px;text-align:center}
+#dialog_box_3 span{text-align:center}
+.dialog_box_btn{background-image:url('images/bet_back.png');background-color:#ea9e32;bor/der:solid 1px black;width:70px;height:30px;display:block;margin-left:100px;padding:8px 0px}
+.dialog_box_btn:hover{background-color:green;cursor:pointer}
+span[title='You\'ve betted on this team']{background-color:green;}
+#noti_div{width:35px;height:35px;background-image:url('images/notifi.png');margin:auto;margin-bottom:-15px;color:white;line-height:35px}
+#back_cover{width:100%;height:100%;background-color:rgba(255,255,255,0.8);position:absolute;text-align:center;top:0px;z-index:0}
+#saving_div{margin-top:20%;font-size:30px;color:#0b8ca2;font-weight:bold}
+#coin_div{margin: auto;width: 72px;height: 25px;margin-bottom:-10px}
+.coin_box{display:block;float:left;line-height:25px;}
+#coin_img{float:right}
+#coin_text{width:45px;}

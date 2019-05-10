@@ -1,0 +1,456 @@
+{
+    "data": [{
+        "quizId": "1",
+        "title": "Who is your competitor in singing ?",
+        "results": {
+            "count": 5,
+            "resTxts": {
+                "txts": ["Tahir Shah (Angel Singer)", "Rebecca Black (Friday Friday)", "Om Prakash (Aunty guy)", "Bhim Narula (Sunday Love)", "Dhinchak Pooja"],
+                "pos": [572, 360],
+                "align": "center",
+                "font": "Georgia",
+                "font-size": "32",
+                "font-style": "bold",
+                "color": "#fff"
+            },
+            "resPic": {
+                "pos": [432, 124],
+                "w": 280,
+                "h": 219,
+                "type": "jpg"
+            },
+            "uPicture": {
+                "pos": [63, 124],
+                "w": 219,
+                "h": 219
+            },
+            "uName": {
+                "pos": [232, 8],
+                "align": "right",
+                "font": "Georgia",
+                "font-style": "bold",
+                "font-size": 32,
+                "color": "#B25900",
+                "align": "right",
+                "type": "first"
+            },
+            "bgType": "jpg"
+        }
+    }, {
+        "quizId": "2",
+        "title": "How much you can win in Kaun Banega Crorepati",
+        "results": {
+            "count": 6,
+            "resTxts": {
+                "txts": ["Rs. 6,40,000", "Rs. 12,50,000", "Rs. 25,00,000", "Rs. 50,00,000", "Rs. 1,00,00,000", "Rs. 7,00,00,000"],
+                "pos": [168, 355],
+                "align": "center",
+                "font": "Georgia",
+                "font-size": "45",
+                "color": "#FFFF4C",
+                "stroke": "2 #000"
+            },
+            "uPicture": {
+                "pos": [0, 0],
+                "w": 402,
+                "h": 420
+            },
+            "bgType": "gif",
+            "stackOrder": "user-first"
+        }
+    }, {
+        "quizId": "3",
+        "title": "What will you say if you were ACP Pradyuman ?",
+        "results": {
+            "count": 8,
+            "resPic": {
+                "pos": [0, 0],
+                "w": 800,
+                "h": 420,
+                "type": "png"
+            },
+            "uPicture": {
+                "pos": [25, 146],
+                "w": 192,
+                "h": 190
+            },
+            "bgType": "jpg"
+        }
+    }, {
+        "quizId": "4",
+        "title": "Which badass movie character are you ?",
+        "results": {
+            "count": {
+                "male": 6,
+                "female": 6
+            },
+            "resPic": {
+                "pos": [0, 0],
+                "w": 800,
+                "h": 420,
+                "type": "png"
+            },
+            "uPicture": {
+                "pos": [30, 124],
+                "w": 179,
+                "h": 205
+            },
+            "bgType": "jpg",
+            "genderBased": true
+        }
+    }, {
+        "quizId": "5",
+        "title": "Which Gulzar poem describes you ?",
+        "results": {
+            "count": 7,
+            "resPic": {
+                "pos": [0, 0],
+                "w": 800,
+                "h": 420,
+                "type": "png"
+            },
+            "uPicture": {
+                "pos": [122, 46],
+                "w": 132,
+                "h": 132,
+                "shape":"circle"
+            },
+            "bgType": "jpg"
+        }
+    }, {
+        "quizId": "6",
+        "title": "What message does Lord Krishna have for you ?",
+        "results": {
+            "count": 12,
+            "resTxts": {
+                "txts": [
+                    "Perform your obligatory duty, \nbecause action is indeed better than inaction.",
+                    "The mind is restless and difficult to \nrestrain, but it is subdued by practice.",
+                    "Fear not what is not real, never was and \nnever will be. What is real, always was \nand cannot bedestroyed.",
+                    "It is better to live your own destiny \nimperfectly than to live an imitation of \nsomebody else’s life with perfection.",
+                    "The wise grieve neither for the living nor \nfor the dead. There was never a time \nwhen you and I and all the kings gathered \nhere have not existed and nor will there \nbe a time when we will cease to exist.",
+                    "Set thy heart upon thy work, but never on \nits reward.",
+                    "Feelings of heat and cold, pleasure and \npain, are caused by the contact of the \nsenses with their objects. They come and \nthey go, never lasting long. You must \naccept them.",
+                    "I am the Atma abiding in the heart of all \nbeings. I am also the beginning, the \nmiddle, and the end of all beings.",
+                    "We behold what we are, and we are what \nwe behold.",
+                    "Lust, anger, and greed are the three \ndoors to hell.",
+                    "For man, mind is the cause of bondage \nand mind is the cause of liberation. Mind \nabsorbed in sense objects is the cause of \nbondage, and mind detached from the \nsense objects is the cause of liberation.",
+                    "But for one who takes pleasure in the Self, \nwhose human life is one of \nself-realization, and who is satisfied \nin the Self only, fully satiated – for him \nthere is no duty."
+                ],
+                "pos": [77, 118],
+                "font": "Georgia",
+                "font-size": "32",
+                "color": "#fff",
+                "w": 633,
+                "h": 236,
+                "multiline": true,
+                "line-height": 46
+            },
+            "uName": {
+                "pos": [78, 80],
+                "font": "Georgia",
+                "font-style": "bold",
+                "font-size": 32,
+                "color": "#FFFF26",
+                "type": "first",
+                "charAfter": ","
+            },
+            "bgType": "jpg"
+        }
+    }, {
+        "quizId": "7",
+        "title": "Your Hogwarts inivitation letter",
+        "results": {
+            "count": 0,
+            "uName": {
+                "pos": [290, 161],
+                "font": "Georgia",
+                "font-style": "regular",
+                "font-size": 11,
+                "color": "#8C0000"
+            },
+            "bgType": "jpg"
+        }
+    }, {
+        "quizId": "8",
+        "title": "What message does Goddess Durga have you this Navratri ?",
+        "results": {
+            "count": 9,
+            "resPic": {
+                "pos": [0, 0],
+                "w": 800,
+                "h": 420,
+                "type": "png"
+            },
+            "uPicture": {
+                "pos": [80, 97],
+                "w": 83,
+                "h": 83,
+                "shape":"circle"
+            },
+            "bgType": "jpg"
+        }
+    }, {
+        "quizId":"9",
+        "title": " Which bollywood movie character are you ?",
+        "results": {
+            "count": {
+                "male": 10,
+                "female": 7
+            },
+            "resTxts": {
+                "txts": {
+                    "male":[
+                        "Baahubali", 
+                        "Barfi", 
+                        "Chatur", 
+                        "Chulbul Pandey", 
+                        "Circuit",
+                        "Gabbar",
+                        "Krishh",
+                        "Mogambo",
+                        "PK",
+                        "Thakur"
+                    ],
+                    "female":[
+                        "Anarkali",
+                        "Basanti",
+                        "Dalbir Kaur (Sarabjit)",
+                        "Geet (Jab we met)",
+                        "Mastani",
+                        "Priya (3 Idiots)",
+                        "Rani (Queen)"
+                    ]
+                },
+                "pos": [620, 375],
+                "align": "center",
+                "font": "Georgia",
+                "font-size": "30",
+                "font-style": "bold",
+                "color": "#fff"
+            },
+            "resPic": {
+                "pos": [488, 50],
+                "w": 270,
+                "h": 319,
+                "type": "jpg"
+            },
+            "uPicture": {
+                "pos": [34, 98],
+                "w": 222,
+                "h": 222
+            },
+            "uName": {
+                "pos": [392, 3],
+                "align": "right",
+                "font": "Georgia",
+                "font-style": "bold",
+                "font-size": 36,
+                "color": "#FFF85B",
+                "type": "first",
+                "charAfter":",",
+                "stroke":"2 #000"
+            },
+            "bgType": "jpg",
+            "genderBased": true
+        }
+    }, {
+        "quizId": "10",
+        "title": "Which book's story matches your life ?",
+        "results": {
+            "count": 9,
+            "resTxts": {
+                "txts": [
+                "2 States",
+                "A Walk to remember", 
+                "Fifty Shades of Grey", 
+                "Five Point Someone",
+                "I too had a love story",
+                "Of course i love you",
+                "The fault in our stars",
+                "The Notebook",
+                "3 Mistakes of My Life"],
+                "pos": [497, 10],
+                "font": "Georgia",
+                "font-size": "30",
+                "font-style": "bold",
+                "color": "#FFF85A",
+                "stroke":"2 #000"
+            },
+            "resPic": {
+                "pos": [456, 55],
+                "w": 248,
+                "h": 337,
+                "type": "jpg"
+            },
+            "uPicture": {
+                "pos": [46, 91],
+                "w": 262,
+                "h": 262
+            },
+            "uName": {
+                "pos": [149, 11],
+                "align": "right",
+                "font": "Georgia",
+                "font-style": "bold",
+                "font-size": 32,
+                "color": "#FFFF4D",
+                "align": "right",
+                "type": "first",
+                "charAfter":","
+            },
+            "bgType": "jpg"
+        }
+    }, {
+        "quizId": "11",
+        "title": "How will your wedding card look like ?",
+        "results": {
+            "count": {
+                "male":11,
+                "female":11
+                },
+            "resTxts": {
+                "txts": {
+                    "male":[
+                    "Deepika",
+                    "Natasha",
+                    "Shalini",
+                    "Anuradha",
+                    "Aishwarya",
+                    "Ayesha",
+                    "Divya",
+                    "Gitanjali",
+                    "Hema",
+                    "Jyoti",
+                    "Madhavi"
+                    ],
+                    "female":[
+                    "Rohan",
+                    "Akshay",
+                    "Saurabh",
+                    "Nitin",
+                    "Aakash",
+                    "Abhishek",
+                    "Aditya",
+                    "Rahul",
+                    "Raj",
+                    "Dev",
+                    "Arjun"]
+                },
+                "pos": [529, 270],
+                "align": "center",
+                "font": "Georgia",
+                "font-size": "15",
+                "font-style": "italic",
+                "color": "#EED233",
+                "pos2":[280,393],
+                "font-size2":13,
+                "font2":"Georgia",
+                "font-style2":"italic",
+                "color2":"#EED233"
+            },
+            "uName": {
+                "pos": [528.5, 218],
+                "align": "center",
+                "font": "Georgia",
+                "font-style": "italic",
+                "font-size": 15,
+                "color": "#EED233",
+                "type": "first",
+                "pos2":[238,393],
+                "align2": "right",
+                "font2": "Georgia",
+                "font-style2": "italic",
+                "font-size2": 13,
+                "color2": "#EED233",
+                "type2": "first"
+            },
+            "date":{
+                "options":{
+                    "weekday": "long", 
+                    "year": "numeric", 
+                    "month": "short",  
+                    "day": "numeric"
+                },
+                "increment":"random",
+                "min":365,
+                "pos": [529, 322],
+                "align": "center",
+                "font": "Georgia",
+                "font-style": "italic",
+                "font-size": 13,
+                "color": "#ffffff"
+            },
+            "bgType":"jpg",
+            "genderBased":true
+        }
+    }, {
+        "quizId": "12",
+        "title": "Which Comics character are you ?",
+        "results": {
+            "count": {
+                "male":12,
+                "female":8
+            },
+            "resTxts": {
+                "txts": {
+                "male":[
+                    "Batman",
+                    "Captain America",
+                    "Chacha Chaudhary",
+                    "Dhruva",
+                    "Flash",
+                    "Iron Man",
+                    "Nagraj",
+                    "Parmanu",
+                    "Shaktimaan",
+                    "Spider Man",
+                    "Superman",
+                    "Wolverine"
+                ],
+                "female":[
+                    "Black Widow",
+                    "Jean Grey",
+                    "Pinki ( Chacha Chaudhary )",
+                    "Scarlet Witch",
+                    "Shakti",
+                    "Super Girl",
+                    "Wonder Woman",
+                    "Captain Marvel"
+                ]
+                },
+                "pos": [230.5, 139],
+                "align": "center",
+                "font": "Georgia",
+                "font-size": "28",
+                "font-style": "bold",
+                "color": "#695199"
+            },
+            "resPic": {
+                "pos": [0, 0],
+                "w": 800,
+                "h": 420,
+                "type": "gif"
+            },
+            "uPicture": {
+                "pos": [25, 227],
+                "w": 170,
+                "h": 170,
+                "shape":"circle"
+            },
+            "uName": {
+                "pos": [235, 81],
+                "align": "center",
+                "font": "Georgia",
+                "font-style": "bold",
+                "font-size": 22,
+                "color": "#695199",
+                "type": "first",
+                "charAfter":","
+            },
+            "bgType": "png",
+            "stackOrder":"user-first",
+            "genderBased":true
+        }
+    }]
+}
