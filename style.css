@@ -231,7 +231,6 @@ body {
     margin-top: 40px;
     text-align: center;
     position: relative;
-    font-family: Cambria, Georgia;
     font-size: 25px;
     color: #222;
 }
@@ -239,7 +238,6 @@ body {
 .contact {
     background: #F26767;
     color: white;
-    font-family: Cambria, Georgia;
     font-size: 21px;
     padding: 20px;
 }
@@ -316,6 +314,9 @@ body {
 }
 
 @media screen and (max-width:768px) {
+    .portfolio{
+        top:250px;
+    }
     .work-links div {
         width: 100%;
     }
