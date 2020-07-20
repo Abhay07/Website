@@ -9,9 +9,9 @@ body {
     height: 100px;
     background: #222222;
     color: white;
-    position: fixed;
-    top: 0;
-    z-index: 2;
+    /* position: fixed; */
+    /* top: 0; */
+    /* z-index: 2; */
 }
 
 .identity {
@@ -117,7 +117,7 @@ body {
 .portfolio {
     overflow: hidden;
     position: relative;
-    top: 100px;
+    /* top: 100px; */
 }
 
 .portfolio-heading {
@@ -315,7 +315,7 @@ body {
 
 @media screen and (max-width:768px) {
     .portfolio{
-        top:250px;
+        /* top:250px; */
     }
     .work-links div {
         width: 100%;
