@@ -101,19 +101,6 @@
         </script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
-<script defer>
-$(document).ready(
-    function() {
-        $('li:first-child').click(
-            function() {
-                $("html, body").animate({ scrollTop: 0 }, 1000);
-            });
-
-        $('li:not(:nth-child(1)').click(
-            function() {
-                $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-            });
-    });
-</script>
+<script defer src="js/script.js"></script>
 
 </html>
