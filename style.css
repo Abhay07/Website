@@ -134,15 +134,19 @@ body {
 }
 
 .works.css {
+    background: #652B2B;
+}
+
+.works.ml {
     background: #f26767;
 }
 
 .works.canvas {
-    background: #f26767;
+    background: #652B2B;
 }
 
 .works.website {
-    background: #652B2B;
+    background: #f26767;
 }
 
 .work-heading {
@@ -160,6 +164,9 @@ body {
     position: relative;
     overflow: hidden;
     padding-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .work-links div {
@@ -182,7 +189,8 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .work-links div a:before {
@@ -212,7 +220,6 @@ body {
     background: white;
     padding: 50px 0px;
     padding-bottom: 0px;
-    margin-top: 100px;
 }
 
 .pic {
@@ -233,6 +240,7 @@ body {
     position: relative;
     font-size: 25px;
     color: #222;
+    margin-bottom: 50px;
 }
 
 .contact {
