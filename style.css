@@ -189,8 +189,10 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
+    background-color: #642c2c;
 }
 
 .work-links div a:before {
