@@ -1,0 +1,23 @@
+{
+    "name": "Abhay Srivastav - Front End/ Full Stack Developer",
+    "short_name": "Abhay Srivastav",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#f26767",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/images/mypic_192.jpg",
+        "type": "image/jpg", "sizes": "192x192"
+      },
+      {
+        "src": "/images/mypic_512.jpg",
+        "type": "image/jpg", "sizes": "512x512"
+      },
+      {
+        "src": "/images/mypic_144.png",
+        "type": "image/png", "sizes": "144x144"
+      }
+    ]
+  }
