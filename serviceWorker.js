@@ -1,5 +1,6 @@
+const cacheVersion = "v4";
 self.addEventListener('install',(event)=>{
-    event.waitUntil(caches.open('v2').then((cache)=>{
+    event.waitUntil(caches.open(cacheVersion).then((cache)=>{
         cache.addAll([
             '/',
             '/index.html',
@@ -35,6 +36,20 @@ self.addEventListener('install',(event)=>{
         ])
         .then(()=>console.log('cached'),(err)=>console.log(err));
     }))
+})
+
+self.addEventListener('activate',event=>{
+    event.waitUntil(
+        (async ()=>{
+            const keys = await caches.keys();
+            return keys.map(async (cache)=>{
+                if(cache !== cacheVersion){
+                    console.log("service worker: Removing old cache: "+cache);
+                    return await caches.delete(cache);
+                }
+            })
+        })()
+    )
 })
 
 self.addEventListener('fetch',event=>{
