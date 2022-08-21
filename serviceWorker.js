@@ -1,4 +1,4 @@
-const cacheVersion = "v5";
+const cacheVersion = "v6";
 self.addEventListener('install',(event)=>{
     self.skipWaiting();
     event.waitUntil(caches.open(cacheVersion).then((cache)=>{
