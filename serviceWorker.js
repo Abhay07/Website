@@ -1,10 +1,9 @@
-const cacheVersion = "v8";
+const cacheVersion = "v10";
 self.addEventListener('install',(event)=>{
     self.skipWaiting();
     event.waitUntil(caches.open(cacheVersion).then((cache)=>{
         cache.addAll([
             '/',
-            '/index.html',
             '/style.css',
             '/images/github.png',
             '/images/twitter.png',
@@ -12,7 +11,6 @@ self.addEventListener('install',(event)=>{
             '/images/medium.png',
             '/images/email.png',
             '/images/phone.png',
-            '/images/mypic.png',
             '/images/auto-poetry.jpg',
             '/images/remove-background.jpg',
             '/images/works/book.png',
