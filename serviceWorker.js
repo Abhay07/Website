@@ -1,9 +1,10 @@
-const cacheVersion = "v10";
+const cacheVersion = "v11";
 self.addEventListener('install',(event)=>{
     self.skipWaiting();
     event.waitUntil(caches.open(cacheVersion).then((cache)=>{
         cache.addAll([
             '/',
+            '/index.html',
             '/style.css',
             '/images/github.png',
             '/images/twitter.png',
