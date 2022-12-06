@@ -1,4 +1,4 @@
-const cacheVersion = "v12";
+const cacheVersion = "v14";
 self.addEventListener('install',(event)=>{
     self.skipWaiting();
     event.waitUntil(caches.open(cacheVersion).then((cache)=>{
@@ -31,7 +31,9 @@ self.addEventListener('install',(event)=>{
             '/images/works/ecommerce.png',
             '/images/works/ecommerce2.png',
             '/images/works/mahuri.png',
-            '/images/works/pagetransition.png'
+            '/images/works/pagetransition.png',
+            '/images/hindiscript-logo.jpg',
+            '/images/No-js-timepicker.png'
 
         ])
         .then(()=>console.log('cached'),(err)=>console.log(err));
