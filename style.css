@@ -31,15 +31,15 @@ body {
 
 .menus ul li {
     list-style: none;
-    height: 35px;
-    line-height: 35px;
+    /*! height: 35px; */
+    /*! line-height: 35px; */
     /* margin-left: 30px; */
-    text-align: center;
-    float: left;
-    position: relative;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    /*! text-align: center; */
+    /*! float: left; */
+    /*! position: relative; */
+    /*! top: 50%; */
+    /*! -moz-transform: translateY(-50%); */
+    /*! -o-transform: translateY(-50%); */
 }
 
 .menus ul li .menu-pseudo:before {
@@ -235,6 +235,7 @@ body {
 .other-contacts a {
     display: inline-block;
     position: relative;
+    color: white;
 }
 
 .other-contacts a:after {
